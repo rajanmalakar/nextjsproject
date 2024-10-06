@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <UserProvider>
-          {/* <Header /> */}
+          <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </UserProvider>
       </body>
 

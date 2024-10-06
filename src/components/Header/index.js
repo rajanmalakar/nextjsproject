@@ -5,7 +5,7 @@ import ClientComponent from "./ClientComponent";
 import { useAuth } from "@/app/UserProvider";
 
 import { useEffect, useLayoutEffect, useState } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { BASE_URL } from "@/constant/constant";
 // import AuthModal from "../../components/custom/AuthModal";
 
@@ -33,11 +33,11 @@ const Header = () => {
   const { isAuthenticated, userDetails } = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(true);
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const pathName = usePathname();
+  // const searchParams = useSearchParams();
+  // const pathName = usePathname();
   // console.log(pathName, "hello pathe namememeememeemem");
 
-  const lastPath = searchParams.get("lastPath");
+  // const lastPath = searchParams.get("lastPath");
   const handleEventsClick = (e) => {
     if (!isAuthenticated) {
       e.preventDefault();

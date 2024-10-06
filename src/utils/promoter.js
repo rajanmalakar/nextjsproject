@@ -1,4 +1,4 @@
-import { CatListItem, PromoterData, SeparatedData } from "./types";
+// import { CatListItem, PromoterData, SeparatedData } from "./types";
 
 export const separatePromoterData = (data = []) => {
   let objectsArray = [];
